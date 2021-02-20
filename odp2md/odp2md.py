@@ -199,7 +199,7 @@ class Parser:
                             odp.extract(m, ".")
                             if not os.path.exists(self.mediaDirectory):
                                 os.makedirs(self.mediaDirectory)
-                            v = textwrap.shorten(v,80)
+                            #v = textwrap.shorten(v,80)
                             os.rename(os.path.join(".", m), v)
                         except KeyError:
                             print("Unkown key ", m)
