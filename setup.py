@@ -18,5 +18,9 @@ setuptools.setup(
         "License :: OSI Approved :: GPL",
         "Operating System :: OS Independent"
     ],
+    entry_points="""
+    [console_scripts]
+    odp2md = odp2md.odp2md:main
+    """,
     python_requires='>=3.6',
 )
